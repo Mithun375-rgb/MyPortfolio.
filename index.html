@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mithun T. — Computer Science (AIML) Engineer & Software Developer</title>
+
+  <!-- SEO & Social Graph Meta Tags -->
+  <meta name="description"
+    content="Portfolio of Mithun T — Computer Science Engineering student specializing in Artificial Intelligence & Machine Learning (AIML), Data Visualization, Systems Software, and IoT." />
+  <meta name="keywords"
+    content="Mithun T, AIML Engineer, Machine Learning, Data Science, Python, Three.js, Portfolio, Computer Science, Plotly, Streamlit, IoT" />
+  <meta name="author" content="Mithun T" />
+  <meta property="og:title" content="Mithun T. — Computer Science (AIML) Engineer" />
+  <meta property="og:description"
+    content="Intelligent architectures, exploratory data visualization, and resilient software systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://mithun-t-portfolio.netlify.app/" />
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧠</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./src/css/style.css" />
+</head>
+
+<body>
+
+  <!-- Custom Cyber Cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Responsive 3D WebGL Swarm Background (point_code.jsx) -->
+  <div id="hero-canvas-container"></div>
+
+  <!-- Interactive Swarm HUD Widget -->
+  <div id="swarm-hud"></div>
+
+  <!-- Global Header Navigation -->
+  <nav>
+    <a href="#hero" class="nav-brand" aria-label="Mithun T. Home">
+      <div class="brand-symbol">M</div>
+      <div class="brand-text">Mithun T.<span class="tag-sub">AIML</span></div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#terminal-section">Terminal</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#playground-section">AI Lab</a></li>
+      <li><a href="#blog">Insights</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="nav-tool-btn" id="sound-toggle-btn" title="Toggle Cyber Audio FX"
+        aria-label="Toggle Audio">🔇</button>
+      <button class="nav-tool-btn" id="theme-toggle-btn" title="Toggle Light/Dark Mode"
+        aria-label="Toggle Theme">☀️</button>
+      <a href="mailto:mithun.t0375@gmail.com" class="btn-primary btn-hire">Hire Me ↗</a>
+      <button class="mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="mobile-drawer">
+    <a href="#about" class="drawer-link">About</a>
+    <a href="#terminal-section" class="drawer-link">Neural Terminal</a>
+    <a href="#skills" class="drawer-link">Skills Arsenal</a>
+    <a href="#projects" class="drawer-link">Projects</a>
+    <a href="#playground-section" class="drawer-link">Interactive AI Lab</a>
+    <a href="#blog" class="drawer-link">Technical Insights</a>
+    <a href="#contact" class="drawer-link">Get in Touch</a>
+    <a href="#" data-open-resume class="btn-primary drawer-link" style="padding:0.75rem 2rem;margin-top:1rem">Resume /
+      CV 📄</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="hero">
+    <div class="hero-layout">
+      <div class="hero-content">
+        <div class="hero-status-pill">
+          <span class="ping-dot"></span>
+          <span>Open to AIML & Software Internships</span>
+        </div>
+
+        <h1 class="hero-title">
+          <span class="grad-text">Mithun T.</span>
+        </h1>
+
+        <div class="hero-role-ticker">
+          <span>&gt; CS Engineer</span>
+          <span style="color:var(--text-muted)">·</span>
+          <span>AIML Specialist</span>
+          <span style="color:var(--text-muted)">·</span>
+          <span>Systems Builder</span>
+          <span class="cursor-blink"></span>
+        </div>
+
+        <p class="hero-bio">
+          Computer Science Engineering student specializing in <strong>Artificial Intelligence & Machine
+            Learning</strong>. Passionate about synthesizing rigorous mathematical principles with high-performance code
+          to engineer <strong>intelligent recommendation systems</strong>, <strong>data-driven visual
+            analytics</strong>, and <strong>robust software solutions</strong>.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <span>Explore Flagship Projects</span> ↓
+          </a>
+          <a href="#terminal-section" class="btn-secondary">
+            <span>Neural Terminal</span> ⚡
+          </a>
+          <button class="btn-secondary" data-open-resume>
+            <span>Resume / CV</span> 📄
+          </button>
+          <a href="https://github.com/Mithun375-rgb" target="_blank" rel="noopener noreferrer" class="btn-secondary"
+            title="GitHub Profile">
+            <span>GitHub</span> ↗
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Column -->
+      <div class="hero-stats-panel">
+        <div class="hero-stat-card tilt-card">
+          <div class="stat-number grad-text">B.Tech</div>
+          <div class="stat-label">Computer Science & Engineering (AIML)</div>
+        </div>
+        <div class="hero-stat-card tilt-card">
+          <div class="stat-number text-cyan" style="color:var(--cyan)">14k+</div>
+          <div class="stat-label">3D WebGL Swarm Nodes Running in Live Simulation</div>
+        </div>
+        <div class="hero-stat-card tilt-card">
+          <div class="stat-number text-mint" style="color:var(--mint)">4+</div>
+          <div class="stat-label">Flagship Production Architectures (AI, IoT, Analytics)</div>
+        </div>
+        <div class="hero-stat-card tilt-card">
+          <div class="stat-number text-violet" style="color:var(--violet)">&lt;120ms</div>
+          <div class="stat-label">Average Recommendation & Analytics Inference Latency</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-cue">
+      <span>Scroll To Explore</span>
+      <div class="scroll-line-animated"></div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE TERMINAL SECTION -->
+  <section id="terminal-section" class="reveal-on-scroll">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Interactive Environment</span>
+        <h2 class="section-title">AI Workstation Terminal</h2>
+        <p class="section-sub">Directly query system status, explore research interests, inspect architecture
+          diagnostics, or run commands.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div id="terminal-container"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="reveal-on-scroll">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Engineering Philosophy</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text-content">
+          <p>
+            Hello! I'm <strong>Mithun T</strong>, an engineering student pursuing my <strong>B.Tech in Computer Science
+              Engineering with specialization in AIML</strong>. My journey is driven by a deep fascination with how
+            mathematical abstractions—linear algebra, vector spaces, and probability—can be engineered into living,
+            intelligent software.
+          </p>
+          <p>
+            I don't just consume pre-packaged ML frameworks; I enjoy unpacking the internal mechanisms. Whether
+            developing an adaptive recommendation engine from scratch in Python, implementing bare-metal hardware
+            control loops in C for IoT telemetry, or rendering 14,000 WebGL points in Fibonacci vortexes, I focus on
+            <strong>clarity, performance, and clean modular architecture</strong>.
+          </p>
+
+          <div class="about-credentials-box">
+            <div class="cred-title">
+              <span>🎓</span> Academic Foundations & Core Coursework
+            </div>
+            <ul class="cred-list">
+              <li><span>●</span> <strong>Specialized AIML:</strong> Machine Learning, Deep Neural Networks, Vector
+                Mathematics, Pattern Recognition, Predictive Modeling.</li>
+              <li><span>●</span> <strong>Core Computer Science:</strong> Data Structures & Algorithms (DSA),
+                Object-Oriented Design, Operating Systems, Database Management Systems (DBMS), Computer Networks.</li>
+              <li><span>●</span> <strong>Systems & Engineering:</strong> Modular C Programming, Dynamic Memory
+                Management, Software Architecture & Clean Code.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about-cards-column">
+          <div class="pillar-card tilt-card">
+            <div class="pillar-icon-box pi-blue">🧠</div>
+            <div class="pillar-info">
+              <h4>Machine Learning & Neural Architecture</h4>
+              <p>Designing supervised/unsupervised pipelines, content recommenders, regression algorithms, and deep
+                convolutional vision models.</p>
+            </div>
+          </div>
+
+          <div class="pillar-card tilt-card">
+            <div class="pillar-icon-box pi-cyan">📊</div>
+            <div class="pillar-info">
+              <h4>Exploratory Data Science & Visual Storytelling</h4>
+              <p>Transforming complex, multidimensional datasets into interactive visual narratives using Pandas, NumPy,
+                and Plotly.</p>
+            </div>
+          </div>
+
+          <div class="pillar-card tilt-card">
+            <div class="pillar-icon-box pi-mint">⚡</div>
+            <div class="pillar-info">
+              <h4>Low-Level Systems & Software Engineering</h4>
+              <p>Writing reliable, high-performance C and Python software with clean modular separation and zero-leak
+                memory discipline.</p>
+            </div>
+          </div>
+
+          <div class="pillar-card tilt-card">
+            <div class="pillar-icon-box pi-amber">🌐</div>
+            <div class="pillar-info">
+              <h4>Connected Systems & Edge IoT Telemetry</h4>
+              <p>Interfacing ultrasonic sensors, analog water quality probes, and microcontrollers with real-time
+                analytics dashboards.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="reveal-on-scroll">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Technical Competencies</span>
+        <h2 class="section-title">Skills & Tool Arsenal</h2>
+        <p class="section-sub">A curated breakdown of programming languages, machine learning toolkits, data libraries,
+          and developer workflows.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- AI & ML -->
+        <div class="skill-category-card tilt-card">
+          <div class="cat-header">
+            <span class="cat-icon">🤖</span>
+            <h3 class="cat-title" style="color:var(--cyan)">AI & Machine Learning</h3>
+          </div>
+          <div class="skill-pills-wrap">
+            <span class="skill-pill sp-cyan">Scikit-Learn</span>
+            <span class="skill-pill sp-cyan">Recommendation Engines</span>
+            <span class="skill-pill sp-cyan">Neural Networks (CNN)</span>
+            <span class="skill-pill sp-cyan">Linear Regression & Polynomials</span>
+            <span class="skill-pill sp-cyan">Vector Mathematics</span>
+            <span class="skill-pill sp-cyan">Model Evaluation (ROC-AUC)</span>
+            <span class="skill-pill sp-cyan">Grad-CAM Interpretability</span>
+          </div>
+        </div>
+
+        <!-- Data Science & Analytics -->
+        <div class="skill-category-card tilt-card">
+          <div class="cat-header">
+            <span class="cat-icon">📈</span>
+            <h3 class="cat-title" style="color:#A5F3FC">Data Science & Analytics</h3>
+          </div>
+          <div class="skill-pills-wrap">
+            <span class="skill-pill sp-cyan">Pandas</span>
+            <span class="skill-pill sp-cyan">NumPy</span>
+            <span class="skill-pill sp-cyan">Plotly Interactive Dashboards</span>
+            <span class="skill-pill sp-cyan">Matplotlib & Seaborn</span>
+            <span class="skill-pill sp-cyan">Data Cleaning & Imputation</span>
+            <span class="skill-pill sp-cyan">Feature Engineering</span>
+            <span class="skill-pill sp-cyan">yFinance Historical API</span>
+          </div>
+        </div>
+
+        <!-- Core Programming & Systems -->
+        <div class="skill-category-card tilt-card">
+          <div class="cat-header">
+            <span class="cat-icon">💻</span>
+            <h3 class="cat-title" style="color:#A7F3D0">Programming & Core CS</h3>
+          </div>
+          <div class="skill-pills-wrap">
+            <span class="skill-pill sp-mint">Python 3</span>
+            <span class="skill-pill sp-mint">C Programming</span>
+            <span class="skill-pill sp-mint">JavaScript (ES6+)</span>
+            <span class="skill-pill sp-mint">Data Structures & Algorithms</span>
+            <span class="skill-pill sp-mint">Object-Oriented Design</span>
+            <span class="skill-pill sp-mint">Dynamic Memory Allocation</span>
+            <span class="skill-pill sp-mint">File Handling & Streams</span>
+            <span class="skill-pill sp-mint">HTML5 / Modern CSS</span>
+          </div>
+        </div>
+
+        <!-- Developer Tooling & Platforms -->
+        <div class="skill-category-card tilt-card">
+          <div class="cat-header">
+            <span class="cat-icon">🛠️</span>
+            <h3 class="cat-title" style="color:#FDE68A">Tools & Platforms</h3>
+          </div>
+          <div class="skill-pills-wrap">
+            <span class="skill-pill sp-amber">Git & GitHub</span>
+            <span class="skill-pill sp-amber">VS Code</span>
+            <span class="skill-pill sp-amber">Jupyter Notebooks</span>
+            <span class="skill-pill sp-amber">Streamlit Framework</span>
+            <span class="skill-pill sp-amber">Google Colab</span>
+            <span class="skill-pill sp-amber">Linux / Bash CLI</span>
+            <span class="skill-pill sp-amber">Arduino / ESP32</span>
+            <span class="skill-pill sp-amber">Netlify & Vercel</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS SECTION -->
+  <section id="projects" class="reveal-on-scroll">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Proven Engineering</span>
+        <h2 class="section-title">Featured Flagship Projects</h2>
+        <p class="section-sub">Production-grade applications combining artificial intelligence, IoT hardware telemetry,
+          and quantitative finance analytics.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="filter-pills-row">
+        <button class="filter-pill active" data-filter="all">All Projects</button>
+        <button class="filter-pill" data-filter="ai">AI & Machine Learning</button>
+        <button class="filter-pill" data-filter="iot">IoT & Embedded Systems</button>
+        <button class="filter-pill" data-filter="data">Data Analytics & Finance</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: AI Finance Platform -->
+        <div class="project-card pj-card-blue tilt-card" data-category="ai">
+          <div class="project-header-row">
+            <span class="project-badge pb-blue">AI · EdTech · RecSys</span>
+            <span class="project-icon-large">💰</span>
+          </div>
+          <h3 class="project-title">AI-Powered Finance Learning Platform</h3>
+          <p class="project-desc">
+            An intelligent educational platform that personalizes curriculum pathways based on student mastery vectors,
+            featuring a custom math-based recommendation algorithm and real-time AI assistance.
+          </p>
+          <ul class="project-highlights-list">
+            <li><span class="bullet-dot"></span>Personalized learning paths adapted to diagnostic assessment scores</li>
+            <li><span class="bullet-dot"></span>Vector cosine similarity recommendation engine built from scratch</li>
+            <li><span class="bullet-dot"></span>Interactive Streamlit user interface with live mastery scorecards</li>
+            <li><span class="bullet-dot"></span>Dynamic concept deficiency tracking to prevent premature topic
+              progression</li>
+          </ul>
+          <div class="project-footer">
+            <div class="tech-chips-row">
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">AI/ML</span>
+              <span class="tech-chip">Streamlit</span>
+              <span class="tech-chip">Pandas</span>
+            </div>
+            <button class="btn-primary btn-inspect" data-open-project="finance">Inspect Architecture ↗</button>
+          </div>
+        </div>
+
+        <!-- Project 2: Smart IoT Water Monitor -->
+        <div class="project-card pj-card-cyan tilt-card" data-category="iot">
+          <div class="project-header-row">
+            <span class="project-badge pb-cyan">IoT · Embedded C · Telemetry</span>
+            <span class="project-icon-large">💧</span>
+          </div>
+          <h3 class="project-title">Smart IoT Water Monitoring & Quality System</h3>
+          <p class="project-desc">
+            An intelligent telemetry and motor control system designed to eliminate water overflow wastage, continuously
+            evaluate potable water quality metrics (pH & TDS), and trigger autonomous safety cutoffs.
+          </p>
+          <ul class="project-highlights-list">
+            <li><span class="bullet-dot"></span>Automated hysteresis motor actuation via ultrasonic distance sensing
+            </li>
+            <li><span class="bullet-dot"></span>Real-time water purity assessment with moving median noise filtering
+            </li>
+            <li><span class="bullet-dot"></span>Hardware-level snubber protection preventing inductive relay kickbacks
+            </li>
+            <li><span class="bullet-dot"></span>Demonstrated ~38% water waste reduction in prototype stress runs</li>
+          </ul>
+          <div class="project-footer">
+            <div class="tech-chips-row">
+              <span class="tech-chip">Embedded C</span>
+              <span class="tech-chip">IoT Sensors</span>
+              <span class="tech-chip">Arduino/ESP32</span>
+              <span class="tech-chip">Telemetry</span>
+            </div>
+            <button class="btn-primary btn-inspect" data-open-project="water">Inspect Architecture ↗</button>
+          </div>
+        </div>
+
+        <!-- Project 3: Quantitative Stock Trend Analyzer -->
+        <div class="project-card pj-card-mint tilt-card" data-category="data">
+          <div class="project-header-row">
+            <span class="project-badge pb-mint">Data Science · Finance · Plotly</span>
+            <span class="project-icon-large">📈</span>
+          </div>
+          <h3 class="project-title">Quantitative Stock Trend & Volatility Engine</h3>
+          <p class="project-desc">
+            A high-performance market analytics tool that ingests 10-year historical market feeds via yFinance,
+            vectorizes technical indicators (EMA, RSI, Bollinger Bands), and renders interactive Plotly visualizations.
+          </p>
+          <ul class="project-highlights-list">
+            <li><span class="bullet-dot"></span>Vectorized mathematical indicators implemented with NumPy and Pandas
+            </li>
+            <li><span class="bullet-dot"></span>Plotly interactive charting with crosshairs, zoomable windows & volume
+              subplots</li>
+            <li><span class="bullet-dot"></span>Multi-ticker correlation matrices and annualized Sharpe ratio
+              calculations</li>
+            <li><span class="bullet-dot"></span>Sub-300ms query latency across 50,000+ historical tick points</li>
+          </ul>
+          <div class="project-footer">
+            <div class="tech-chips-row">
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">Plotly</span>
+              <span class="tech-chip">yFinance</span>
+              <span class="tech-chip">NumPy</span>
+            </div>
+            <button class="btn-primary btn-inspect" data-open-project="stock">Inspect Architecture ↗</button>
+          </div>
+        </div>
+
+        <!-- Project 4: Neural Vision Diagnostic Suite -->
+        <div class="project-card pj-card-amber tilt-card" data-category="ai">
+          <div class="project-header-row">
+            <span class="project-badge pb-amber">Deep Learning · Vision · PyTorch</span>
+            <span class="project-icon-large">🔬</span>
+          </div>
+          <h3 class="project-title">Neural Vision & Diagnostic Suite</h3>
+          <p class="project-desc">
+            A deep learning classification pipeline built with convolutional neural networks and transfer learning,
+            equipped with data augmentation and Grad-CAM interpretability heatmaps.
+          </p>
+          <ul class="project-highlights-list">
+            <li><span class="bullet-dot"></span>Transfer learning using fine-tuned ResNet convolutional feature
+              extractors</li>
+            <li><span class="bullet-dot"></span>Grad-CAM visual attention mapping providing clinical interpretability
+            </li>
+            <li><span class="bullet-dot"></span>Focal loss optimization mitigating severe medical class imbalance</li>
+            <li><span class="bullet-dot"></span>0.942 validation ROC-AUC score with 45ms inference latency</li>
+          </ul>
+          <div class="project-footer">
+            <div class="tech-chips-row">
+              <span class="tech-chip">PyTorch</span>
+              <span class="tech-chip">CNNs</span>
+              <span class="tech-chip">Computer Vision</span>
+              <span class="tech-chip">Grad-CAM</span>
+            </div>
+            <button class="btn-primary btn-inspect" data-open-project="neural">Inspect Architecture ↗</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE AIML PLAYGROUND / VISUALIZER LAB -->
+  <section id="playground-section" class="reveal-on-scroll">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Interactive Machine Learning Lab</span>
+        <h2 class="section-title">Bias-Variance Tradeoff Simulator</h2>
+        <p class="section-sub">Experiment with real polynomial regression in your browser. Adjust model complexity and
+          observation noise to observe underfitting versus overfitting in real time.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="playground-shell">
+        <div class="playground-grid">
+          <div class="canvas-wrapper">
+            <canvas id="ml-canvas"></canvas>
+            <div
+              style="display:flex;justify-content:space-between;margin-top:0.75rem;font-size:0.75rem;color:var(--text-dim);font-family:var(--font-mono)">
+              <span>- - - Underlying Truth: sin(πx) + 0.25x²</span>
+              <span style="color:var(--cyan)">—— Model Fitted Curve</span>
+              <span style="color:var(--pink)">● Training Samples</span>
+            </div>
+          </div>
+
+          <div id="ml-controls"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG / TECHNICAL ARTICLES SECTION -->
+  <section id="blog" class="reveal-on-scroll">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Engineering Insights</span>
+        <h2 class="section-title">Technical Writings & Learnings</h2>
+        <p class="section-sub">Deep-dive technical retrospectives from projects covering data visualization,
+          recommendation engines, and embedded IoT systems.</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Article 1: Plotly vs Matplotlib -->
+        <div class="blog-card tilt-card" data-open-article="plotly">
+          <div class="blog-card-banner bb-cyan">📊</div>
+          <div class="blog-card-body">
+            <div class="blog-meta-row">
+              <span class="blog-cat-pill bcp-cyan">Data Viz</span>
+              <span class="blog-date-text">5 Min Read</span>
+            </div>
+            <h3 class="blog-title">Why Plotly Beats Matplotlib for Production Data Storytelling</h3>
+            <p class="blog-excerpt">
+              After developing the Stock Trend Analyzer, I documented why static PNG charts break down when conveying
+              financial time-series data—and how interactive WebGL tooltips change user engagement.
+            </p>
+            <div class="blog-footer-row">
+              <span class="blog-read-link">Read Full Article →</span>
+              <span style="font-size:0.75rem;color:var(--text-dim)">Plotly · Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 2: Recommendation Engine -->
+        <div class="blog-card tilt-card" data-open-article="recommender">
+          <div class="blog-card-banner bb-cyan">🤖</div>
+          <div class="blog-card-body">
+            <div class="blog-meta-row">
+              <span class="blog-cat-pill bcp-cyan">Machine Learning</span>
+              <span class="blog-date-text">7 Min Read</span>
+            </div>
+            <h3 class="blog-title">Building a Recommendation Engine from Scratch Without Heavy Frameworks</h3>
+            <p class="blog-excerpt">
+              How I designed an adaptive topic recommendation engine in my AI Finance platform using pure vector linear
+              algebra and cosine similarity—running in under 4ms with zero framework bloat.
+            </p>
+            <div class="blog-footer-row">
+              <span class="blog-read-link">Read Full Article →</span>
+              <span style="font-size:0.75rem;color:var(--text-dim)">Linear Algebra · RecSys</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Article 3: IoT Lessons -->
+        <div class="blog-card tilt-card" data-open-article="iot">
+          <div class="blog-card-banner bb-amber">💧</div>
+          <div class="blog-card-body">
+            <div class="blog-meta-row">
+              <span class="blog-cat-pill bcp-amber">Embedded IoT</span>
+              <span class="blog-date-text">6 Min Read</span>
+            </div>
+            <h3 class="blog-title">What I Wish I Knew Before Building My First Real-World IoT Project</h3>
+            <p class="blog-excerpt">
+              Acoustic vapor reflections, relay inductive kickback spikes, and analog sensor temperature drift: real
+              engineering lessons from the Smart Water Monitor that tutorials never mention.
+            </p>
+            <div class="blog-footer-row">
+              <span class="blog-read-link">Read Full Article →</span>
+              <span style="font-size:0.75rem;color:var(--text-dim)">Embedded C · Hardware</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & COLLABORATION HUB -->
+  <section id="contact" class="reveal-on-scroll">
+    <div class="section-container">
+      <div class="contact-layout">
+        <div>
+          <span class="section-eyebrow">Collaboration</span>
+          <h2 class="contact-intro-title">
+            Have a project?<br />
+            <span class="grad-text">Let's engineer it.</span>
+          </h2>
+          <p class="contact-intro-desc">
+            Whether you are looking for a dedicated <strong>AIML engineer</strong>, a software developer for
+            high-performance applications, or want to discuss machine learning architectures—my inbox is always open.
+          </p>
+
+          <div class="quick-connect-cards">
+            <a href="mailto:mithun.t0375@gmail.com" class="quick-card">
+              <div class="qc-left">
+                <span class="qc-icon">📧</span>
+                <div>
+                  <div class="qc-title">Email Direct</div>
+                  <div class="qc-sub">mithun.t0375@gmail.com</div>
+                </div>
+              </div>
+              <span style="color:var(--cyan)">↗</span>
+            </a>
+
+            <div class="quick-card copy-email-btn" style="cursor:pointer">
+              <div class="qc-left">
+                <span class="qc-icon">📋</span>
+                <div>
+                  <div class="qc-title">One-Click Copy</div>
+                  <div class="qc-sub">Copy address to your clipboard</div>
+                </div>
+              </div>
+              <span style="color:var(--mint);font-size:0.85rem;font-weight:600">Click to Copy</span>
+            </div>
+
+            <a href="https://github.com/Mithun375-rgb" target="_blank" rel="noopener noreferrer" class="quick-card">
+              <div class="qc-left">
+                <span class="qc-icon">💻</span>
+                <div>
+                  <div class="qc-title">GitHub Repositories</div>
+                  <div class="qc-sub">github.com/Mithun375-rgb</div>
+                </div>
+              </div>
+              <span style="color:var(--cyan)">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <form id="portfolio-contact-form">
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. Sarah Connor" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Your Email Address</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="e.g. sarah@domain.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Inquiry Subject</label>
+              <select id="contact-subject" class="form-select">
+                <option value="Internship / Full-Time Opportunity">Internship / Full-Time Role</option>
+                <option value="AIML / Software Project Collaboration">Project Collaboration</option>
+                <option value="Technical Consulting / Freelance">Technical Consulting</option>
+                <option value="General Conversation & Networking">General Networking</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-msg">Message</label>
+              <textarea id="contact-msg" class="form-textarea"
+                placeholder="Tell me about your project, team, or opportunity..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width:100%;padding:1rem;font-size:1rem">
+              <span>Send Message</span> ⚡
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">
+      <span class="grad-text">Mithun T.</span>
+      <span style="color:var(--text-dim);font-weight:400;font-size:0.85rem;margin-left:0.5rem">AIML & Computer
+        Science</span>
+    </div>
+    <div class="footer-info">
+      © 2026 Mithun T. — Engineered with Three.js WebGL & Vanilla CSS.
+    </div>
+    <div style="font-family:var(--font-mono);font-size:0.75rem;color:var(--cyan)">
+      SYSTEM STATUS: OPTIMAL
+    </div>
+  </footer>
+
+  <!-- PROJECT DEEP DIVE MODAL -->
+  <div class="modal-backdrop" id="project-modal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="project-modal-close" aria-label="Close modal">✕</button>
+      <div id="project-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- ARTICLE READING MODAL -->
+  <div class="modal-backdrop" id="article-modal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="article-modal-close" aria-label="Close modal">✕</button>
+      <div id="article-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- RESUME / CV MODAL -->
+  <div class="modal-backdrop" id="resume-modal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="resume-modal-close" aria-label="Close modal">✕</button>
+      <div class="modal-eyebrow">CURRICULUM VITAE</div>
+      <h2 class="modal-title">Mithun T.</h2>
+      <div class="modal-status-badge">● B.Tech Computer Science Engineering (AIML)</div>
+
+      <div style="margin:1.5rem 0;line-height:1.8;color:var(--text-muted);font-size:0.95rem">
+        <h3 class="modal-section-title">Education</h3>
+        <p><strong>Bachelor of Technology (B.Tech) in Computer Science & Engineering (AIML)</strong><br />
+          Coursework: Machine Learning, Deep Neural Networks, Data Structures & Algorithms, Database Management Systems,
+          Operating Systems, Computer Networks, Linear Algebra & Probability.</p>
+
+        <h3 class="modal-section-title">Key Competencies</h3>
+        <p>● <strong>Languages:</strong> Python, C, JavaScript (ES6+), HTML5, CSS3<br />
+          ● <strong>AIML & Data:</strong> Scikit-Learn, Pandas, NumPy, Plotly, Matplotlib, Streamlit, Recommendation
+          Systems<br />
+          ● <strong>Systems & Tools:</strong> Git, GitHub, VS Code, Jupyter, Arduino/ESP32, Linux/Bash</p>
+
+        <h3 class="modal-section-title">Flagship Architectures</h3>
+        <p>● <strong>AI Finance Learning Platform:</strong> Custom recommendation algorithm, personalized curriculum
+          paths, Streamlit GUI.<br />
+          ● <strong>Smart IoT Water Monitor:</strong> Ultrasonic level sensing, real-time TDS/pH quality evaluation,
+          automated relay actuation, ~38% water waste reduction.<br />
+          ● <strong>Quantitative Stock Trend Analyzer:</strong> Real-time historical market data feeds via yFinance,
+          vectorized technical indicators, interactive Plotly charting.</p>
+      </div>
+
+      <div class="modal-actions-row" style="margin-top:2rem">
+        <a href="mailto:mithun.t0375@gmail.com?subject=Requesting%20Mithun%20T%20Official%20Resume%20PDF"
+          class="btn-primary">
+          <span>Request Official PDF Resume</span> 📥
+        </a>
+        <button class="btn-secondary copy-email-btn">
+          <span>Copy Contact Email</span> 📋
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Bootstrap -->
+  <script type="module" src="./src/js/app.js"></script>
+</body>
+
+</html>
